@@ -1,5 +1,26 @@
  @import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Roboto:wght@100;300;500;700&display=swap');
 
+
+ .grass    {background-color: #77c850 ;}
+ .fire     {background-color: #ee7f30 ;}
+ .water    {background-color: #678fee ;}
+ .electric {background-color: #f7cf2e ;}
+ .ice      {background-color: #98d5d7 ;}
+ .ground   {background-color: #dfbf69 ;}
+ .flying   {background-color: #a98ff0 ;}
+ .poison   {background-color: #a040a0 ;}
+ .fighting {background-color: #bf3029 ;}
+ .psychic  {background-color: #f65687 ;}
+ .dark     {background-color: #725847 ;}
+ .rock     {background-color: #b8a137 ;}
+ .bug      {background-color: #a8b720 ;}
+ .ghost    {background-color: #6e5896 ;}
+ .steel    {background-color: #b9b720 ;}
+ .dragon   {background-color: #6f38f6 ;}
+ .fairy    {background-color: #f9aec7 ;}
+ .normal   {background-color: #a6a877 ;}
+ 
+
  *{       
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -30,9 +51,9 @@
 }
 
 .pokemon{
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin: 0.5rem;
-    background-color: #49D0B0;
+    
     color: #fff;
     border-radius: 1rem;
     display: flex;
@@ -40,11 +61,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .pokemon .numero{
+    margin: 3px 0;
+    width: 100%;
     color: #00000033;
     text-align: end;
+    font-size: 15px;
+    font-weight: 600;
 }
+
+.pokemon .name{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .pokemon .detail{
     display: flex;
     flex-direction: row;
@@ -57,11 +88,13 @@
 }
 
 .pokemon .detail .types .type{
-    background-color: #19c198;
-    color:#fff;
-    padding: .25rem .5rem;
+    text-align: center;
+    filter: brightness(1.1);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
     border-radius: 3rem;
     font-size: .825rem;
+    margin: 0.5rem 0;
 }
 
 
